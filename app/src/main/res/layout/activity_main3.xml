@@ -3,22 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <!-- TextView -->
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="339dp"
-        android:layout_height="347dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="192dp"
-        android:background="@color/black"
-        android:gravity="center"
-        android:text="이 어플리케이션의 제작자인 이하민은 2001년에 태어났으며 코딩을 배우고 있습니다 취미로는 여행이 있으며 현재까지 12개국을 여행하고 있습니다"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
     <!-- 버튼 -->
     <Button
@@ -43,5 +29,14 @@
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
