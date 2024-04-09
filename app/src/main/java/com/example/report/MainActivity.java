@@ -1,10 +1,10 @@
 package com.example.report;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,23 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button7 = findViewById(R.id.button9);
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(intent);
-            }
-        });
-
-        Button button9= findViewById(R.id.button7);
-        button9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
-                startActivity(intent);
-            }
-        });
-
+        // 여기에 추가적인 코드를 작성하십시오.
     }
+
+    // 다른 메소드들을 정의할 수 있습니다.
 }
