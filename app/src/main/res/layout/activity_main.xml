@@ -23,10 +23,7 @@
         android:layout_height="350dp"
         android:orientation="vertical">
 
-
-
-
-        <!-- 세 번째 레이아웃 -->
+        <!-- 첫 번째 레이아웃 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -36,29 +33,35 @@
             android:layout_marginBottom="20dp">
 
             <TextView
-                android:id="@+id/phonestate"
+                android:id="@+id/phonestate1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="주소록 관리"
+                android:text="연락처 관리"
                 android:textColor="#000000"
                 android:textAlignment="center"
                 android:gravity="center_vertical"
-                android:background="@drawable/bg_3" />
+                android:background="@drawable/bg_3"
+                android:clickable="true"
+                android:focusable="true"
+                />
 
-            <!-- 네 번째 레이아웃 -->
+            <!-- 두 번째 레이아웃 -->
             <TextView
-                android:id="@+id/author"
+                android:id="@+id/author1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="인터넷 서핑"
+                android:text="인터넷 검색"
                 android:textColor="#000000"
                 android:textAlignment="center"
                 android:gravity="center_vertical"
                 android:background="@drawable/bg_4"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp" />
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                />
 
         </LinearLayout>
 
@@ -77,20 +80,24 @@
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
+            <!-- 세 번째 레이아웃 -->
             <TextView
-                android:id="@+id/phonestate"
+                android:id="@+id/phonestate2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bg_3"
                 android:gravity="center_vertical"
-                android:text="폰 상태"
+                android:text="폰 상태 검색"
                 android:textAlignment="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:clickable="true"
+                android:focusable="true"
+                />
 
             <!-- 네 번째 레이아웃 -->
             <TextView
-                android:id="@+id/author"
+                android:id="@+id/author2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="20dp"
@@ -100,7 +107,10 @@
                 android:gravity="center_vertical"
                 android:text="저자 소개"
                 android:textAlignment="center"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:clickable="true"
+                android:focusable="true"
+                />
 
         </LinearLayout>
     </LinearLayout>

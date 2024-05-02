@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,8 +13,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 여기에 추가적인 코드를 작성하십시오.
-    }
+        // 버튼을 찾습니다.
+        TextView phonestateButton = findViewById(R.id.phonestate1);
 
-    // 다른 메소드들을 정의할 수 있습니다.
+        // 버튼에 클릭 리스너를 추가합니다.
+        phonestateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent를 사용하여 activity_main2로 이동합니다.
+                Intent intent = new Intent(MainActivity.this, NumberBook.class);
+                startActivity(intent);
+            }
+        });
+    }
 }
