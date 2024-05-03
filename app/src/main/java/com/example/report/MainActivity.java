@@ -36,6 +36,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView InternetButton = findViewById(R.id.author1);
+        // 두 번째 버튼에 클릭 리스너를 추가합니다.
+        InternetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 두 번째 버튼을 클릭했을 때 실행할 코드를 작성합니다.
+                Intent intent = new Intent(MainActivity.this, InternetSearch.class);
+                startActivity(intent);
+            }
+        });
     }
 }
 
