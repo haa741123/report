@@ -31,6 +31,12 @@
             android:name=".Introduce"
             android:exported="true" />
         <activity
+            android:name=".AddContactActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ContactDetailActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
