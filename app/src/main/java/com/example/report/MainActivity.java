@@ -14,13 +14,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // 첫 번째 버튼을 찾습니다.
-        TextView phonestateButton = findViewById(R.id.phonestate1);
-        // 첫 번째 버튼에 클릭 리스너를 추가합니다.
-        phonestateButton.setOnClickListener(new View.OnClickListener() {
+        TextView IntroduceButton = findViewById(R.id.phonestate1);
+        // 첫 번째 버튼에 클릭 리스너를 추가합니다.s
+        IntroduceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 첫 번째 버튼을 클릭했을 때 실행할 코드를 작성합니다.
-                Intent intent = new Intent(MainActivity.this, Introduce.class);
+                Intent intent = new Intent(MainActivity.this, NumberBook.class);
                 startActivity(intent);
             }
         });
@@ -44,6 +44,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // 두 번째 버튼을 클릭했을 때 실행할 코드를 작성합니다.
                 Intent intent = new Intent(MainActivity.this, InternetSearch.class);
+                startActivity(intent);
+            }
+        });
+
+        // 첫 번째 버튼을 찾습니다.
+        TextView phonestateButton = findViewById(R.id.phonestate2);
+        // 첫 번째 버튼에 클릭 리스너를 추가합니다.
+        phonestateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 첫 번째 버튼을 클릭했을 때 실행할 코드를 작성합니다.
+                Intent intent = new Intent(MainActivity.this, PhoneStat.class);
                 startActivity(intent);
             }
         });

@@ -11,7 +11,7 @@ public class NumberBook extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main5);
 
         Button button2 = findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
