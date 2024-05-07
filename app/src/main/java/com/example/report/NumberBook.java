@@ -47,15 +47,13 @@ public class NumberBook extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
 
-        // 추가 버튼 클릭 시 동작
-        Button button2 = findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish(); // 현재 액티비티를 종료하고 이전 액티비티로 돌아감
-            }
-        });
+    // 추가 버튼 클릭 시 동작
+    public void onAddButtonClick(View view) {
+        // 연락처 추가 화면으로 이동하는 코드를 추가
+        Intent intent = new Intent(this, AddContactActivity.class);
+        startActivity(intent);
     }
 
     @Override
