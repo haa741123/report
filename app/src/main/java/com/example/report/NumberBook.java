@@ -1,4 +1,3 @@
-// NumberBook.java
 package com.example.report;
 
 import android.content.Intent;
@@ -9,10 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.report.AddContactActivity;
-import com.example.report.Contact;
-import com.example.report.DatabaseHelper;
 
 import java.util.List;
 
@@ -45,6 +40,15 @@ public class NumberBook extends AppCompatActivity {
                 Intent intent = new Intent(NumberBook.this, ContactDetailActivity.class);
                 intent.putExtra("contact_id", selectedContact.getId()); // 선택한 연락처의 ID를 인텐트에 추가합니다.
                 startActivity(intent);
+            }
+        });
+
+        // 이전 화면으로 돌아가는 버튼 설정
+        Button button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // 현재 액티비티를 종료하고 이전 액티비티로 돌아감
             }
         });
     }
